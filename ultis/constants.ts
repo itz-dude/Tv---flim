@@ -8,7 +8,7 @@ export const mediaTypes: MediaType[] = ['all', 'movie', 'tv'];
 export const imageOriginal = (imgPath: string) =>
   `${TMDB_IMAGE}original${imgPath}`;
 export const w500Image = (imgPath: string) => `${TMDB_IMAGE}w500${imgPath}`;
-export const embedMovie = (id: number) => `https://2embed.org/embed/${id}`;
+export const embedMovie = (id: number) => `https://2embed.to/embed/tmdb/movie?id=${id}`;
 export const imageResize = (src: string, dimension: string = 'w200') =>
   `${TMDB_IMAGE}${dimension}${src}`;
 export const embedEpisode = (id: number, season: number, episode: number) =>
